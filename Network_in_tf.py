@@ -178,6 +178,24 @@ with tf.Session() as sess:
         for i in range(total_batch):
             batch_x, batch_y = mnist.train.next_batch(batch_size)
 
+            #run optimization op (backprop) and cost op (to get loss value)
+            _, c,summary = sess.run([optimizer, loss, summary_op], )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
